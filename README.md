@@ -1,6 +1,7 @@
 # Project Name
 
 > Project description
+Navigation bar for dog adoption webpage project
 
 ## Related Projects
 
