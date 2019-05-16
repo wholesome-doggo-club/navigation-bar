@@ -1,0 +1,91 @@
+#app, #test {
+  background-color: red;
+}
+
+#nav-bar-frame {
+  display: flex;
+  background-color: #f0f0f0;
+  position:absolute; 
+  /* this allows the navigation bar to stretch through the entire screen but it cuts off a small section of the top page */
+  left: 0;
+  right: 0;
+  top: 0;
+  padding:0px;
+  height:70px;
+  background-size:100%;   
+}
+
+#nav-bar-main {
+  height:69px;
+  background-color:green;
+  flex-grow: 1;
+}
+
+#nav-bar-register {
+  height:69px;
+  background-color:yellow;
+  width: 265px;
+}
+
+#nav-search-container {
+  display: inline;
+}
+
+#nav-search-items {
+  display: inline-block;
+}
+
+#nav-search-btn {
+  width: 70px;
+  border: 1px red;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  height:69px;
+  width:150px;
+}
+
+.search {
+  width:60px;
+  float: right;
+}
+
+.fake {
+  width:1px;
+}
+
+.search-bar {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  height: 38px;
+}
+
+form {
+  display: inline-block;
+}
+
+
+#nav-form-bar-drop {
+  background-color: #f0f0f0;
+  height:100px;
+  width: 100%;
+  position:absolute; 
+  left: 0;
+  right: 0;
+  top: 70px;
+  padding:0px;
+}
