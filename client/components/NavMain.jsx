@@ -29,6 +29,7 @@ class NavMain extends React.Component {
     if (this.state.search === false) {
       return (
         <div id="nav-bar-main">
+          <div className="nav-button fake">.</div>
           <div className="nav-button">Pet Finder</div>
           <div className="nav-button" onClick={() => this.props.handleNavFormBar('findPet')}>Find a Pet!</div>
           <div className="nav-button" onClick={() => this.props.handleNavFormBar('breeds')}>Breeds</div>
@@ -41,9 +42,10 @@ class NavMain extends React.Component {
         <div id="nav-search-container" className ="searching">
           
             <span className="searching">
-              <div className="button searching">Pet Finder</div>
+              <div className="nav-button searching fake">.</div>
+              <div className="nav-button searching">Pet Finder</div>
               Search Articles: <input type="text"></input>
-              <div className="button search searching" onClick = {this.handleSearchSwitch}>X</div>
+              <div className="nav-button search searching" onClick = {this.handleSearchSwitch}>X</div>
             
             </span>
             <span>
