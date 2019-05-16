@@ -60,18 +60,22 @@ body, div, span {
   border: 1px red;
 }
 
-.button {
+.nav-bar-main-button {
   background-color: WHITE; /* Green */
   border: none;
   color: #4D4751;
-  padding: 25px 32px;
+  /* padding: 25px 32px; */
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
-  height:20px;
-  width:140px;
+  /* height:20px; */
+  /* width:140px; */
   /* border: 1px solid #2e0152; */
+}
+
+.nav-bar-main-button:focus{
+  outline: none;
 }
 
 .nav-button {
@@ -83,8 +87,24 @@ body, div, span {
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
+  /* height:20px; */
+  width:100px;
+  /* border-bottom: 1px solid red; */
+  /* border: 1px solid #2e0152; */
+}
+
+.nav-button-searching {
+  background-color: #6504b5; /* Green */
+  border: none;
+  color: white;
+  padding: 25px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
   height:20px;
   width:100px;
+  /* border-bottom: 1px solid red; */
   /* border: 1px solid #2e0152; */
 }
 
@@ -98,21 +118,32 @@ body, div, span {
   /* width:30px; */
 }
 
+.register {
+  width:140px;
+}
+
 .find {
   background-color: #6504b5;
   color: white;
   font-size: 14px;
   padding: 40px 5px;
+  height:20px;
   width: 20%;
   border-left: 1px solid #2e0152;
   /* border-right: 1px solid red; */
 }
+
+.find:hover {
+  background-color: #410078;
+}
+
 
 .find-search-bar {
   background-color: #2e0152;
   color: white;
   font-size: 14px;
   padding: 40px 5px;
+  height:20px;
   width: 20%;
 }
 
@@ -122,9 +153,18 @@ body, div, span {
   font-size: 14px;
 }
 
+
+
 .fake {
   padding: 25px 5px;
   width:100px;
+  color: transparent;
+  /* font-size:1px; */
+}
+
+.fake2 {
+  padding: 25px 5px;
+  width:70px;
   color: transparent;
   /* font-size:1px; */
 }

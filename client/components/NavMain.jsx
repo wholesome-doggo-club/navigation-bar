@@ -31,10 +31,16 @@ class NavMain extends React.Component {
         <div id="nav-bar-main">
           <div className="nav-button fake">.</div>
           <div className="nav-button">Pet Finder</div>
-          <div className="nav-button" onClick={() => this.props.handleNavFormBar('findPet')}>Find a Pet!</div>
-          <div className="nav-button" onClick={() => this.props.handleNavFormBar('breeds')}>Breeds</div>
-          <div className="nav-button" onClick={() => this.props.handleNavFormBar('resources')}>Resources</div>
-          <div className="button search" onClick = {this.handleSearchSwitch}>?</div>
+          <div className="nav-button">
+            <button className="nav-bar-main-button" onClick={() => this.props.handleNavFormBar('findPet')}>FIND A PET</button>
+          </div>
+          <div className="nav-button">
+            <button className="nav-bar-main-button" onClick={() => this.props.handleNavFormBar('breeds')}>BREEDS</button>
+          </div>
+          <div className="nav-button">
+            <button className="nav-bar-main-button" onClick={() => this.props.handleNavFormBar('resources')}>RESOURCES</button>
+          </div>
+          <div className="nav-button search" onClick = {this.handleSearchSwitch}>?</div>
         </div>
       )
     } else if (this.state.search === true) {
@@ -42,14 +48,14 @@ class NavMain extends React.Component {
         <div id="nav-search-container" className ="searching">
           
             <span className="searching">
-              <div className="nav-button searching fake">.</div>
-              <div className="nav-button searching">Pet Finder</div>
+              <div className="nav-button-searching fake">.</div>
+              <div className="nav-button-searching">Pet Finder</div>
               Search Articles: <input type="text"></input>
-              <div className="nav-button search searching" onClick = {this.handleSearchSwitch}>X</div>
+              <div className="nav-button-searching search" onClick = {this.handleSearchSwitch}>X</div>
             
             </span>
             <span>
-              <div className="button search searching">?</div>
+              <div className="nav-button-searching search">?</div>
             </span>
           
         </div>

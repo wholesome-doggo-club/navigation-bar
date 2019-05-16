@@ -27,7 +27,10 @@ class Nav extends React.Component {
       <div >
         <div id="nav-bar-frame">
             <NavMain handleNavFormBar={this.handleNavFormBar}/>
-            <div id="nav-bar-register"><span className="button">SIGN IN / REGISTER</span></div>
+            <div id="nav-bar-register">
+              <span className="nav-button register">SIGN IN / REGISTER</span>
+              <span className="nav-button fake2">.</span>
+            </div>
         </div>
           {
           this.state.navFormBar === 'findPet' ? <NavFind /> :
