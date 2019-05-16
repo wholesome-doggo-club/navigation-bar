@@ -28,25 +28,26 @@ class NavMain extends React.Component {
   render() {
     if (this.state.search === false) {
       return (
-        <div>
-          <button class="button">Pet Finder</button>
-          <button class="button" onClick={() => this.props.handleNavFormBar('findPet')}>Find a Pet!</button>
-          <button class="button" onClick={() => this.props.handleNavFormBar('breeds')}>Breeds</button>
-          <button class="button" onClick={() => this.props.handleNavFormBar('resources')}>Resources</button>
-          <button class="button search" onClick = {this.handleSearchSwitch}>?</button>
+        <div id="nav-bar-main">
+          <div className="nav-button">Pet Finder</div>
+          <div className="nav-button" onClick={() => this.props.handleNavFormBar('findPet')}>Find a Pet!</div>
+          <div className="nav-button" onClick={() => this.props.handleNavFormBar('breeds')}>Breeds</div>
+          <div className="nav-button" onClick={() => this.props.handleNavFormBar('resources')}>Resources</div>
+          <div className="button search" onClick = {this.handleSearchSwitch}>?</div>
         </div>
       )
     } else if (this.state.search === true) {
       return (
-        <div class="nav-search-container">
+        <div id="nav-search-container" className ="searching">
           
-            <span><button class="button">Pet Finder</button>
-            <input type="text"></input>
-            <button class="button search" onClick = {this.handleSearchSwitch}>X</button>
+            <span className="searching">
+              <div className="button searching">Pet Finder</div>
+              Search Articles: <input type="text"></input>
+              <div className="button search searching" onClick = {this.handleSearchSwitch}>X</div>
             
             </span>
             <span>
-            <button class="button search">?</button>
+              <div className="button search searching">?</div>
             </span>
           
         </div>

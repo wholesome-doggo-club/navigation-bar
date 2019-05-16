@@ -1,5 +1,8 @@
 import React from "react";
-import NavMain from "./NavMain.jsx"
+import NavMain from "./NavMain.jsx";
+import NavBreeds from "./NavBreeds.jsx";
+import NavFind from "./NavFind.jsx";
+import NavResources from "./NavResources.jsx";
 
 class Nav extends React.Component {
   constructor() {
@@ -7,13 +10,9 @@ class Nav extends React.Component {
     this.state = {
       navFormBar: 'none'
     };
-    // this.handleChange = this.handleChange.bind(this);
     this.handleNavFormBar = this.handleNavFormBar.bind(this);
   }
 
-  // handleChange(event) {
-  //   this.setState({ [event.target.id]: event.target.value });
-  // }
 
   handleNavFormBar(formName) { // this function changes the condition to which drop down form it'll render to the navigation bar.
     if (this.state.navFormBar === formName){
@@ -25,15 +24,15 @@ class Nav extends React.Component {
 
   render() {
     return (
-      <div>
+      <div >
         <div id="nav-bar-frame">
-          <div id="nav-bar-main"><NavMain handleNavFormBar={this.handleNavFormBar}/></div>
-          <div id="nav-bar-register">Sign in here!!!</div>
+            <NavMain handleNavFormBar={this.handleNavFormBar}/>
+            <div id="nav-bar-register"><span className="button">SIGN IN / REGISTER</span></div>
         </div>
           {
-          this.state.navFormBar === 'findPet' ? <div id="nav-form-bar-drop">find pet</div> :
-          this.state.navFormBar === 'breeds' ? <div id="nav-form-bar-drop">breeds</div> :
-          this.state.navFormBar === 'resources' ? <div id="nav-form-bar-drop">resources<br></br></div> :
+          this.state.navFormBar === 'findPet' ? <NavFind /> :
+          this.state.navFormBar === 'breeds' ? <NavBreeds /> :
+          this.state.navFormBar === 'resources' ? <NavResources /> :
           <div id="blank"></div>}
       </div>
     );
