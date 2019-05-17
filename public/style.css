@@ -65,14 +65,14 @@ body, div, span {
   background-color: WHITE; /* Green */
   border: none;
   color: #4D4751;
-  /* padding: 25px 32px; */
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-weight: 700;
   font-size: 14px;
-  /* height:20px; */
-  /* width:140px; */
-  /* border: 1px solid #2e0152; */
+}
+.nav-bar-main-button:hover {
+  color: #6504b5;
 }
 
 button:focus, input:focus{
@@ -91,7 +91,7 @@ button:focus, input:focus{
   display: inline-block;
   font-size: 14px;
   /* height:20px; */
-  width:100px;
+  /* width:150px; */
   /* border-bottom: 1px solid red; */
   /* border: 1px solid #2e0152; */
 }
@@ -120,6 +120,10 @@ button:focus, input:focus{
   float: right;
 }
 
+.search:hover {
+  color: #6504b5;
+}
+
 .logo {
   padding: 25px 10px;
   /* width:30px; */
@@ -127,6 +131,10 @@ button:focus, input:focus{
 
 .register {
   width:140px;
+}
+
+.register:hover {
+  color: #6504b5;
 }
 
 .find {
@@ -203,23 +211,43 @@ form {
 }
 
 
+/* 
+====================
+THIS IS FOR NAV-RESOURCES.JSX
+====================
+ */
 
+ .nav-resources-button {
+  background-color: transparent;   /* Green #6504b5;*/
+  border: none;
+  color: #ecd7fd;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 14px;
+  
+  padding: 0px;
+  height:55px;
+  width: 100%;
+  /* border: 1px solid #2e0152; */
+}
 
+.nav-resources-button:hover {
+  color: white;
+}
 
-
-.nav-breed-button {
+.nav-btn-container-resources {
+  /* background-color:yellow; */
   border: none;
   color: #ECD7FD;
-  padding: 20px 10px;
+  padding: 0px 3%;
   border-left: 1px solid #444444;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
-  /* height:69px; */
-  /* width:200px; */
-}
 
-.no-border {
+  height:100%;
+  /* width:175px; */
   border: none;
 }

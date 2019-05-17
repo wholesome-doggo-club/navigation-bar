@@ -12,13 +12,42 @@ class NavResources extends React.Component {
   render () {
     return (
       <div id="nav-form-bar-drop">
-        <span className="nav-breed-button no-border">ABOUT PET ADOPTION</span>
-        <span className="nav-breed-button no-border">DOG CARE</span>
-        <span className="nav-breed-button no-border">CAT CARE</span>
-        <span className="nav-breed-button no-border">ALL PET CARE</span>
-        <span className="nav-breed-button no-border">SHELTERS & RESCUES</span>
-        <span className="nav-breed-button no-border">HELPING PETS</span>
-        <span className="nav-breed-button no-border">VIDEOS</span>
+        <span className="nav-btn-container-resources">
+          <button className="nav-resources-button">
+          ABOUT PET ADOPTION
+          </button>
+        </span>
+        <span className="nav-btn-container-resources">
+          <button className="nav-resources-button">
+          DOG CARE
+          </button>
+        </span>
+        <span className="nav-btn-container-resources">
+          <button className="nav-resources-button">
+          CAT CARE
+          </button>
+        </span>
+        <span className="nav-btn-container-resources">
+          <button className="nav-resources-button">
+          ALL PET CARE
+          </button>
+        </span>
+        <span className="nav-btn-container-resources">
+          <button className="nav-resources-button">
+          SHELTERS & RESCUES
+          </button>
+        </span>
+        <span className="nav-btn-container-resources">
+          <button className="nav-resources-button">
+          HELPING PETS
+          </button>
+        </span>
+        <span className="nav-btn-container-resources">
+          <button className="nav-resources-button">
+          VIDEOS
+          </button>
+        </span>
+
       </div>
       
     )

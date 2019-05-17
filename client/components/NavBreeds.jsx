@@ -12,8 +12,20 @@ class NavBreeds extends React.Component {
   render () {
     return (
       <div id="nav-form-bar-drop">
-        <span className="nav-breed-button no-border">xx DOG BREEDS</span>
-        <span className="nav-breed-button">xx CAT BREEDS</span>
+        <span className="nav-btn-container-breed no-border">
+          <button className="nav-breed-button">
+          <span className="filler">
+            <table align="center" id="nav-find-search-type-table"><tr><td><img src="https://www.iconsdb.com/icons/preview/white/cat-xxl.png" height="15px"></img> </td><td>  DOG BREEDS</td></tr></table>
+          </span>
+          </button>
+        </span>
+        <span className="nav-btn-container-breed">
+          <button className="nav-breed-button">
+          <span className="filler">
+            <table align="center" id="nav-find-search-type-table"><tr><td><img src="https://www.iconsdb.com/icons/preview/white/cat-xxl.png" height="15px"></img> </td><td>  CAT BREEDS</td></tr></table>
+          </span>
+          </button>
+        </span>
       </div>
     )
   }

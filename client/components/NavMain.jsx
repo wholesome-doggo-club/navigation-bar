@@ -31,6 +31,7 @@ class NavMain extends React.Component {
         <div id="nav-bar-main">
           <div className="nav-button fake">.</div>
           <div className="nav-button">Pet Finder</div>
+
           <div className="nav-button">
             <button className="nav-bar-main-button" onClick={() => this.props.handleNavFormBar('findPet')}>FIND A PET</button>
           </div>
@@ -40,6 +41,40 @@ class NavMain extends React.Component {
           <div className="nav-button">
             <button className="nav-bar-main-button" onClick={() => this.props.handleNavFormBar('resources')}>RESOURCES</button>
           </div>
+          
+          {/* <span className="nav-button">
+            
+              <span className="filler">
+              <button className="nav-bar-main-button">
+                <table align="center" id="nav-find-search-type-table"><tr><td>Pet Finder </td><td>  </td></tr></table>
+                </button>
+              </span>
+          </span>
+
+          <span className="nav-button">
+            <button className="nav-bar-main-button" onClick={() => this.props.handleNavFormBar('findPet')}>
+              <span className="filler">
+                <table align="center" id="nav-find-search-type-table"><tr><td>FIND A PET </td><td> <img src="https://www.iconsdb.com/icons/preview/white/cat-xxl.png" height="15px"></img> </td></tr></table>
+              </span>
+            </button>
+          </span>
+          <span className="nav-button">
+            <button className="nav-bar-main-button" onClick={() => this.props.handleNavFormBar('breeds')}>
+              <span className="filler">
+                <table align="center" id="nav-find-search-type-table"><tr><td>BREEDS </td><td> <img src="https://www.iconsdb.com/icons/preview/white/cat-xxl.png" height="15px"></img> </td></tr></table>
+              </span>
+            </button>
+          </span>
+          <span className="nav-button">
+            <button className="nav-bar-main-button" onClick={() => this.props.handleNavFormBar('resources')}>
+              <span className="filler">
+                <table align="center" id="nav-find-search-type-table"><tr><td>RESOURCES </td><td> <img src="https://www.iconsdb.com/icons/preview/white/cat-xxl.png" height="15px"></img> </td></tr></table>
+              </span>
+            </button>
+          </span> */}
+          
+
+          
           <div className="nav-button search" onClick = {this.handleSearchSwitch}>?</div>
         </div>
       )
