@@ -32,6 +32,7 @@ class Nav extends React.Component {
               <span className="nav-button fake2">.</span>
             </div>
         </div>
+        {/* these are the drop down forms  */}
           {
           this.state.navFormBar === 'findPet' ? <NavFind /> :
           this.state.navFormBar === 'breeds' ? <NavBreeds /> :
