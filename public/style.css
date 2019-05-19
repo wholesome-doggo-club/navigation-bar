@@ -6,6 +6,19 @@ body, div, span {
   background-color: red;
 }
 
+#app-filler{
+  height:70px;
+}
+
+#page {
+  position:absolute; 
+  background-size:100%;
+  left: 0;
+  right: 0;
+  top: 70px;
+  z-index: -1;
+}
+
 #nav-bar-frame {
   display: flex;
   background-color: #f0f0f0;
@@ -18,7 +31,10 @@ body, div, span {
   padding:0px;
   height:70px;
   background-size:100%;
-  /* border-bottom: 1px solid #ffffff */
+  z-index: 99;
+  /* this allows navigation bar at the top to be the top div */
+  /* border-bottom: 1px solid #18002c */
+  box-shadow: 0px 1px 3px #50028f69;
 }
 /* #nav-bar-container {
   display: flex;

@@ -1,0 +1,22 @@
+#nav-pop-up-main {
+  background-color:yellow;
+  display:table;
+  width:900px;
+  
+}
+
+.nav-popup-left-container{
+  display: inline-block;
+  background-color: #6504b5;
+  width: 50%;
+  height: 687px;
+
+
+}
+
+.nav-popup-right-container{
+  display: inline-block;
+  background-color: red;
+  width: 50%;
+  height: 687px;
+}
