@@ -1,3 +1,13 @@
+@font-face{
+  font-family: "Nexa Regular";
+  src: url('Nexa-Light.otf')
+}
+
+@font-face{
+  font-family: "Nexa Bold";
+  src: url('Nexa-Bold.otf')
+}
+
 body, div, span {
   font-family: 'Nexa Regular', helvetica, arial, sans-serif;
 }
@@ -165,13 +175,6 @@ button:focus, input:focus{
   /* border-right: 1px solid red; */
 }
 
-
-
-
-
-
-
-
 .searching {
   background-color: #6504b5;
   color: white;
@@ -224,46 +227,4 @@ form {
   top: 70px;
   padding:0px;
   /* box-shadow: 0px 2px 2px #410078 inset; */
-}
-
-
-/* 
-====================
-THIS IS FOR NAV-RESOURCES.JSX
-====================
- */
-
- .nav-resources-button {
-  background-color: transparent;   /* Green #6504b5;*/
-  border: none;
-  color: #ecd7fd;
-  text-align: center;
-  text-decoration: none;
-  /* display: inline-block; */
-  font-size: 14px;
-  
-  padding: 0px;
-  height:55px;
-  width: 100%;
-  /* border: 1px solid #2e0152; */
-}
-
-.nav-resources-button:hover {
-  color: white;
-}
-
-.nav-btn-container-resources {
-  /* background-color:yellow; */
-  border: none;
-  color: #ECD7FD;
-  padding: 0px 3%;
-  border-left: 1px solid #444444;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-
-  height:100%;
-  /* width:175px; */
-  border: none;
 }

@@ -52,6 +52,8 @@
   background-color:transparent;
   display: inline-block;
   height: 70px;
+  font-family: 'Nexa Regular', helvetica, arial, sans-serif;
+
   /* background-color:red; */
 }
 
@@ -59,6 +61,8 @@
   background-color:transparent;
   float:right;
   height:70px;
+  font-family: 'Nexa Regular', helvetica, arial, sans-serif;
+
 }
 
 .nav-top-button {
@@ -71,6 +75,8 @@
   display: inline-block;
   font-weight: 700;
   font-size: 14px;
+  font-family: 'Nexa Bold', helvetica, arial, sans-serif;
+
   /* padding: 0px 20px; */
 }
 
@@ -85,6 +91,7 @@
 
 .no-bold {
   font-weight: normal;
+  font-family: "Nexa Regular";
 }
 
 .nav-top-container-searching{
@@ -110,6 +117,8 @@
   width: 100%;
   color: white;
   font-size: 14px;
+  font-family: "Nexa Regular";
+  border-top: 1px solid #6504b5;
 }
 
 .white {

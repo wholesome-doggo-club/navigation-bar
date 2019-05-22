@@ -129,6 +129,7 @@
   width: 100%;
   color: white;
   font-size: 14px;
+  font-family: 'Nexa Regular';
 }
 
 .location-search::placeholder {

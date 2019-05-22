@@ -13,25 +13,28 @@
   width:200px;
 }
 
+.nav-btn-container-breed a {
+  color: #ECD7FD;
+  text-decoration: none;
+}
+.nav-btn-container-breed a:hover {
+  color: #ffffff;
+}
+
 .no-border {
   border: none;
 }
 
 .nav-breed-button {
-  background-color: transparent;   /* Green #6504b5;*/
+  background-color: transparent;
   border: none;
   color: #ecd7fd;
   text-align: center;
   text-decoration: none;
   /* display: inline-block; */
   font-size: 14px;
-  
   padding: 0px;
   height:55px;
   width: 100%;
   /* border: 1px solid #2e0152; */
-}
-
-.nav-breed-button:hover {
-  color: white;
 }
