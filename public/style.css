@@ -226,5 +226,8 @@ form {
   right: 0;
   top: 70px;
   padding:0px;
-  /* box-shadow: 0px 2px 2px #410078 inset; */
+  transform: scaleY(0);
+  transform-origin: center top;
+  transition: transform .15s cubic-bezier(.215,.61,.355,1), -webkit-transform .15s cubic-bezier(.215,.61,.355,1);
+  
 }

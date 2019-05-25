@@ -29,17 +29,64 @@ class Nav extends React.Component {
         <div id="nav-bar-frame">
             <NavMain handleNavFormBar={this.handleNavFormBar}/>
             <div id="nav-top-bar-register">
-              <span className="nav-top-container-register">
+              {/* <span className="nav-top-container-register">
                 <div className="nav-top-container-btn">
                     <NavPopupRegister />
                 </div>
+              </span> */}
+              <span className="nav-top-container-register">
+                <div className="nav-top-container-btn">
+                  <button className="nav-top-button no-bold" for="modal-1">
+                    <label for="nav-register-popup-modal"><table align="center"><tbody><tr><td>👤</td><td>Sign In / Register</td></tr></tbody></table></label>
+                  </button>
+                </div>
               </span>
 
+
             </div>
-            {/* <div id="nav-bar-register">
-              <span className="nav-button register">SIGN IN / REGISTER</span>
-              <span className="nav-button fake2">.</span>
-            </div> */}
+
+
+<input class="modal-state" id="nav-register-popup-modal" type="checkbox" />
+<div class="modal">
+  <label class="modal__bg" for="nav-register-popup-modal"></label>
+  <div class="modal__inner">
+    <label class="modal__close" for="nav-register-popup-modal"></label>
+    <div id="nav-pop-up-main">
+      <span className="nav-popup-left-container">
+      <h1>Petfinder Makes Adopting Easier</h1>
+      <ul>
+        <li>Create and save your adopter profile.</li>
+        <li>Save and manage your pet searches and email communications.</li>
+        <li>Learn helpful pet care tips and receive expert advice.</li>
+        <li>Get involved and help promote adoptable pets in your area.</li>
+      </ul>
+
+
+
+    </span>
+      <span className="nav-popup-right-container">
+        <h1>Log in to Petfinder</h1>
+        <form className="nav-popup-container-form">
+          <label for="Login_Modal_username" class="field-label">Email</label>
+          <input id="Login_Modal_username" type="email" spellcheck="false" name="username" required></input>
+        </form><p></p>
+        <form className="nav-popup-container-form">
+          <input id="Login_Modal_password" type="password" spellcheck="false" autocomplete="off"></input>
+          <label for="Login_Modal_password" class="field-label">Password</label>
+        </form><p></p>
+        <button className="nav-popup-container-btn">LOG IN</button><p></p>
+        
+        <table className="line-partition"><tbody><tr><td><a href="">FORGOT PASSWORD?</a><p></p></td></tr></tbody></table><p></p>
+        DON'T HAVE AN ACCOUNT?<p></p>
+        <button className="nav-popup-container-btn">REGISTER NOW</button>
+
+      
+      </span>
+    </div>
+  </div>
+</div>
+
+
         </div>
         {/* these are the drop down forms  */}
           {
@@ -47,7 +94,9 @@ class Nav extends React.Component {
           this.state.navFormBar === 'breeds' ? <NavBreeds /> :
           this.state.navFormBar === 'resources' ? <NavResources /> :
           <div id="blank"></div>}
+          
       </div>
+      
     );
   }
 }

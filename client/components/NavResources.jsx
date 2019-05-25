@@ -12,17 +12,17 @@ class NavResources extends React.Component {
   
   render () {
     return (
-      <div id="nav-form-bar-drop">
+      <div id="nav-form-bar-drop" className="animate slideInDown">
         <span className="nav-btn-container-resources">
           <Popup
             trigger={<button className="nav-resources-button"><a href="">ABOUT PET ADOPTION</a></button>}
-            position="bottom"
+            position="bottom center"
             on="hover"
             closeOnDocumentClick
             mouseEnterDelay={0}
             contentStyle={{ padding: '0px', border: 'none' }}
             arrow={false} >
-            <div className="nav-resources-dropdown-container">
+            <div className="nav-resources-dropdown-container animate slideInDown">
               <a href="">Dog Adoption</a><p></p>
               <a href="">Cat Adoption</a><p></p>
               <a href="">Other Pet Adoption</a><p></p>
@@ -35,13 +35,13 @@ class NavResources extends React.Component {
         <span className="nav-btn-container-resources">
           <Popup
             trigger={<button className="nav-resources-button"><a href="">DOG CARE</a></button>}
-            position="bottom"
+            position="bottom center"
             on="hover"
             closeOnDocumentClick
             mouseEnterDelay={0}
             contentStyle={{ padding: '0px', border: 'none' }}
             arrow={false} >
-            <div className="nav-resources-dropdown-container">
+            <div className="nav-resources-dropdown-container animate slideInDown">
               <a href="">Dog Adoption</a><p></p>
               <a href="">Dog Breeds</a><p></p>
               <a href="">Bringing A Dog Home</a><p></p>
@@ -56,13 +56,13 @@ class NavResources extends React.Component {
         <span className="nav-btn-container-resources">
           <Popup
             trigger={<button className="nav-resources-button"><a href="">CAT CARE</a></button>}
-            position="bottom"
+            position="bottom center"
             on="hover"
             closeOnDocumentClick
             mouseEnterDelay={0}
             contentStyle={{ padding: '0px', border: 'none' }}
             arrow={false} >
-            <div className="nav-resources-dropdown-container">
+            <div className="nav-resources-dropdown-container animate slideInDown">
               <a href="">Cat Adoption</a><p></p>
               <a href="">Cat Breeds</a><p></p>
               <a href="">Bringing A Cat Home</a><p></p>
@@ -77,13 +77,13 @@ class NavResources extends React.Component {
         <span className="nav-btn-container-resources">
           <Popup
             trigger={<button className="nav-resources-button"><a href="">ALL PET CARE</a></button>}
-            position="bottom"
+            position="bottom center"
             on="hover"
             closeOnDocumentClick
             mouseEnterDelay={0}
             contentStyle={{ padding: '0px', border: 'none' }}
             arrow={false} >
-            <div className="nav-resources-dropdown-container">
+            <div className="nav-resources-dropdown-container animate slideInDown">
               <a href="">Pet Care Videos</a><p></p>
               <a href="">Dogs</a><p></p>
               <a href="">Cats</a><p></p>
@@ -97,13 +97,13 @@ class NavResources extends React.Component {
         <span className="nav-btn-container-resources">
           <Popup
             trigger={<button className="nav-resources-button"><a href="">SHELTERS & RESCUES</a></button>}
-            position="bottom"
+            position="bottom center"
             on="hover"
             closeOnDocumentClick
             mouseEnterDelay={0}
             contentStyle={{ padding: '0px', border: 'none' }}
             arrow={false} >
-            <div className="nav-resources-dropdown-container">
+            <div className="nav-resources-dropdown-container animate slideInDown">
               <a href="">Find an Animal Shelter or Rescue Group</a><p></p>
               <a href="">Starting A Pet-Adoption Organization</a><p></p>
               <a href="">Volunteering With Dogs</a><p></p>
@@ -117,13 +117,13 @@ class NavResources extends React.Component {
         <span className="nav-btn-container-resources">
           <Popup
             trigger={<button className="nav-resources-button"><a href="">HELPING PETS</a></button>}
-            position="bottom"
+            position="bottom center"
             on="hover"
             closeOnDocumentClick
             mouseEnterDelay={0}
             contentStyle={{ padding: '0px', border: 'none' }}
             arrow={false} >
-            <div className="nav-resources-dropdown-container">
+            <div className="nav-resources-dropdown-container animate slideInDown">
               <a href="">Get Involved</a><p></p>
               <a href="">Read Our Blog</a><p></p>
               <a href="">Put Petfinder on Your Site</a><p></p>

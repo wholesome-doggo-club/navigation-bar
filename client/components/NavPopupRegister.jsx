@@ -3,9 +3,9 @@ import Popup from "reactjs-popup";
 
 export default () => (
     <Popup
-    trigger={<button className="nav-top-button no-bold"><table align="center"><tr><td>👤</td><td>Sign In / Register</td></tr></table></button>} modal closeOnDocumentClick>
+    trigger={<button className="nav-top-button no-bold"><table align="center"><tbody><tr><td>👤</td><td>Sign In / Register</td></tr></tbody></table></button>} modal closeOnDocumentClick>
 
-    <div id="nav-pop-up-main">
+    {/* <div id="nav-pop-up-main">
       <span className="nav-popup-left-container">
       <h1>Petfinder Makes Adopting Easier</h1>
       <ul>
@@ -30,6 +30,6 @@ export default () => (
 
       
       </span>
-    </div>
+    </div> */}
   </Popup>
 )

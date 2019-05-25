@@ -42,7 +42,7 @@ class NavMain extends React.Component {
             <div className="nav-top-container-btn">
               <button className="nav-top-button" onClick={() => this.props.handleNavFormBar('findPet')}>
               
-                <table align="center"><tr><td>FIND A PET </td><td> ▼</td></tr></table>
+                <table align="center"><tbody><tr><td>FIND A PET </td><td> ▼</td></tr></tbody></table>
 
               </button>
             </div>
@@ -51,20 +51,20 @@ class NavMain extends React.Component {
             <div className="nav-top-container-btn">
               <button className="nav-top-button" onClick={() => this.props.handleNavFormBar('breeds')}>
                 
-                <table align="center"><tr><td>BREEDS </td><td> ▼</td></tr></table>
+                <table align="center"><tbody><tr><td>BREEDS </td><td> ▼</td></tr></tbody></table>
               </button>
             </div>
           </span>
           <span className="nav-top-container-dir">
             <div className="nav-top-container-btn">
               <button className="nav-top-button" onClick={() => this.props.handleNavFormBar('resources')}>
-                <table align="center"><tr><td>RESOURCES </td><td> ▼</td></tr></table>
+                <table align="center"><tbody><tr><td>RESOURCES </td><td> ▼</td></tr></tbody></table>
               </button>
             </div>
           </span>
           <span className="nav-top-container-search">
-            <div className="nav-top-container-btn-right">
-              <button className="nav-top-button padded" onClick={this.handleSearchSwitch}>
+            <div className="nav-top-container-btn-right left-border">
+              <button className="nav-top-button padded2" onClick={this.handleSearchSwitch}>
               🔍
               </button>
             </div>
@@ -139,7 +139,7 @@ class NavMain extends React.Component {
       )
     } else if (this.state.search === true) {
       return (
-        <div id="nav-top-bar-searching">
+        <div id="nav-top-bar-searching" className="animate">
           <span className="nav-top-container-logo">
             <div className="nav-top-container-btn-right">
               <button className="nav-top-button">
@@ -155,19 +155,19 @@ class NavMain extends React.Component {
               </button>
             </div>
             <div className="nav-top-container-searching-bar">
-              <input type="text" className="article-search"></input>
+              <input type="text" className="article-search" autoFocus></input>
             </div>
           </span>
 
           <span className="nav-top-container-search">
             <div className="nav-top-container-btn left-border">
-              <button className="nav-top-button padded" onClick={() => console.log('tried to search!')}>
+              <button className="nav-top-button padded2" onClick={() => console.log('tried to search!')}>
               🔍
               </button>
             </div>
             <div className="nav-top-container-btn-right left-border">
-              <button className="nav-top-button padded white" onClick={this.handleSearchSwitch}>
-              X
+              <button className="nav-top-button padded2 white large" onClick={this.handleSearchSwitch}>
+              &times;
               </button>
             </div>
           </span>

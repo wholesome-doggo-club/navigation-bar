@@ -1,26 +1,124 @@
 #nav-pop-up-main {
-  background-color:yellow;
   display:flex;
-  /* width:900px; */
-  
 }
 
 .nav-popup-left-container{
   display: inline-block;
   background-color: #6504b5;
   width: 50%;
-  height: 687px;
+  max-height: 507px;
   text-align:left;
   color: white;
+  padding: 120px 60px 60px;
 
+}
+.nav-popup-left-container li{
+  font-size: 14px;
+  margin: 20px 0px 0px 0px;
+  line-height: 1.6;
+}
 
+.nav-popup-left-container ul {
+  padding-left: 10px;
 }
 
 .nav-popup-right-container{
+  text-align:center;
   display: inline-block;
   background-color: white;
-  color:#6504b5;
+  color: #4d4751;
+  line-height: 1.2;
   width: 50%;
-  height: 687px;
-  border: 1px solid red;
+  height: 507px;
+  padding: 120px 60px 60px;
+  font: 14px "Nexa Bold";
+}
+.nav-popup-right-container h1{
+  text-align: left;
+  font-family: "Nexa Regular";
+}
+
+.nav-popup-right-container a {
+  color:#6504b5;
+  font: 14px "Nexa Bold";
+}
+.nav-popup-right-container a:hover {
+  color:#2e0152;
+}
+.nav-popup-container-btn:hover {
+  background-color:#2e0152;
+  border: 2px solid #2e0152;
+}
+
+.nav-popup-container-btn {
+  width: 342px;
+  background-color: #6504b5;
+  margin: 0;
+  background: transparent;
+  color: inherit;
+  text-decoration: inherit;
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 45px;
+  max-width: 100%;
+  padding: 11px 30px;
+  border: 2px solid #6504b5;
+  border-radius: 23px;
+  background-color: #6504b5;
+  -webkit-box-shadow: 0 1px 3px rgba(77,71,81,.2);
+  box-shadow: 0 1px 3px rgba(77,71,81,.2);
+  color: #fff;
+  white-space: nowrap;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  /* font-weight: 700; */
+  font: 14px "Nexa Bold";
+  /* font-size: 14px; */
+  line-height: 1.4;
+}
+
+.nav-popup-container-form input {
+  box-sizing: border-box;
+  display: block;
+  width: 342px;
+  height: 55px;
+  padding: 22px 15px 2px;
+  background-color: #fff;
+  border: 1px solid #d2d1d3;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #6504b5;
+  font-size: 16px;
+  line-height: normal;
+  font-family: "Nexa Bold"
+}
+.nav-popup-container-form {
+  position: relative;
+}
+
+.field-label {
+  display: inline-block;
+  position: absolute;
+  top: 7px;
+  left: 15px;
+  pointer-events: none;
+}
+
+.line-partition {
+  width: 342px;
+  border-bottom: 1px solid #d2d1d3;
+  padding: 10px 0px 15px 0px;
+}
+
+.nav-popup-right-container p {
+  margin-bottom: 30px; /* between paragraphs */
 }
