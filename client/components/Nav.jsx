@@ -28,7 +28,7 @@ class Nav extends React.Component {
       <div >
         <div id="nav-bar-frame">
             <NavMain handleNavFormBar={this.handleNavFormBar}/>
-            <div id="nav-top-bar-register">
+            <div id="nav-top-bar-register" className="left-border">
               {/* <span className="nav-top-container-register">
                 <div className="nav-top-container-btn">
                     <NavPopupRegister />
@@ -36,8 +36,8 @@ class Nav extends React.Component {
               </span> */}
               <span className="nav-top-container-register">
                 <div className="nav-top-container-btn">
-                  <button className="nav-top-button no-bold" for="modal-1">
-                    <label for="nav-register-popup-modal"><table align="center"><tbody><tr><td>👤</td><td>Sign In / Register</td></tr></tbody></table></label>
+                  <button className="nav-top-button" for="modal-1">
+                    <label for="nav-register-popup-modal"><table align="center"><tbody><tr><td><div className="nav-register-icon"></div></td><td>Sign In / Register</td></tr></tbody></table></label>
                   </button>
                 </div>
               </span>

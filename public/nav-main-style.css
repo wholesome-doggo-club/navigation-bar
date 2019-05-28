@@ -4,7 +4,7 @@
   min-width:300px;
   height:70px;
   /* z-index:2; */
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 #nav-top-bar-searching {
@@ -12,10 +12,11 @@
   width:77%;
   min-width:300px;
   height:70px;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 #nav-top-bar-register{
+
   background-color:white;
   width:23%;
   min-width:235px;
@@ -58,6 +59,10 @@
   font-family: 'Nexa Regular', helvetica, arial, sans-serif;
 
   /* background-color:red; */
+}
+
+.nav-top-container-btn:hover {
+  background-color: #410078;
 }
 
 .nav-top-container-btn-right {
@@ -146,9 +151,42 @@
 }
 
 
+.nav-register-icon {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  background: url("icon-register.png") no-repeat center;
+  background-size:28px 30px;
+  display: inline-block;
+}
 
+.nav-top-button:hover .nav-register-icon{
+  background: url("icon-register-hover.png") no-repeat center;
+  background-size:28px 30px;
+}
 
+.nav-search-icon {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  background: url("icon-search.png") no-repeat center;
+  background-size:25px 30px;
+  display: inline-block;
+}
 
+.nav-top-button:hover .nav-search-icon{
+  background: url("icon-search-hover.png") no-repeat center;
+  background-size:25px 30px;
+}
+
+.nav-searching-icon {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  background: url("icon-searching.png") no-repeat center;
+  background-size:25px 30px;
+  display: inline-block;
+}
 
 /* [Object] Modal
  * =============================== */

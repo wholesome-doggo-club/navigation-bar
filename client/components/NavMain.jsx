@@ -66,7 +66,7 @@ class NavMain extends React.Component {
           <span className="nav-top-container-search">
             <div className="nav-top-container-btn-right left-border">
               <button className="nav-top-button padded2" onClick={this.handleSearchSwitch}>
-              🔍
+              <div className="nav-search-icon"></div>
               </button>
             </div>
           </span>
@@ -144,7 +144,7 @@ class NavMain extends React.Component {
           <span className="nav-top-container-logo">
             <div className="nav-top-container-btn-right">
               <button className="nav-top-button">
-                <img src="nav_logo3.png" height="40px"></img>
+                <img src="nav_logo2.png" height="40px"></img>
               </button>
             </div>
           </span>
@@ -163,7 +163,7 @@ class NavMain extends React.Component {
           <span className="nav-top-container-search">
             <div className="nav-top-container-btn left-border">
               <button className="nav-top-button padded2" onClick={() => alert("Searching: " + this.state.articleSearch)}>
-              🔍
+              <div className="nav-searching-icon"></div>
               </button>
             </div>
             <div className="nav-top-container-btn-right left-border">

@@ -88,7 +88,7 @@ body, div, span {
 }
 
 .nav-bar-main-button {
-  background-color: WHITE; /* Green */
+  background-color: WHITE;
   border: none;
   color: #4D4751;
   text-align: center;
@@ -108,7 +108,7 @@ button:focus, input:focus{
 
 
 .nav-button {
-  background-color: WHITE; /* Green */
+  background-color: WHITE;
   border: none;
   color: #4D4751;
   padding: 25px 32px;
@@ -123,7 +123,7 @@ button:focus, input:focus{
 }
 
 .nav-button-searching {
-  background-color: #6504b5; /* Green */
+  background-color: #6504b5;
   border: none;
   color: white;
   padding: 25px 32px;
