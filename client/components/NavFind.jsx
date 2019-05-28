@@ -47,7 +47,7 @@ class NavFind extends React.Component {
 
   fetchResults() {
     axios.get('/api/nav', { params: { searchTerm : this.state.locationSearch } })
-      .then(({data}) => this.setState({showResults : data.slice(0,10)}))
+      .then(({data}) => this.setState({showResults : data }))
       .catch(err => console.log(err));
     // console.log('updating data')
     // let newArr = ['Los Angeles, CA', 'Los Feliz, CA']
@@ -134,7 +134,7 @@ class NavFind extends React.Component {
                   contentStyle={{ padding: '0px', border: 'none' }}
                   arrow={false} >
                   <div className="nav-find-otherPets-dropdown">
-                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('rabbits')}><table align="left" id="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-rabbit.png" height="30px"></img></td><td>Rabbits</td></tr></tbody></table></button>
+                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('rabbits')}><table align="left" id="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-rabbits.png" height="30px"></img></td><td>Rabbits</td></tr></tbody></table></button>
                     <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('smallAndFurry')}><table align="left" id="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-smallAndFurry.png" height="30px"></img></td><td>Small & Furry</td></tr></tbody></table></button>
                     <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('scalesFinsOthers')}><table align="left" id="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-scalesFinsOther.png" height="30px"></img></td><td>Scales, Fins, & Other</td></tr></tbody></table></button>
                     <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('birds')}><table align="left" id="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-birds.png" height="30px"></img></td><td>Birds</td></tr></tbody></table></button>

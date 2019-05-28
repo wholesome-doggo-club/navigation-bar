@@ -4,9 +4,21 @@ module.exports = {
   get: (req, res) => {
     // fetch data depending on searchTerm value.
     if (!Number(req.query.searchTerm)) {
-      City.find({}, (err, doc) => err ? res.status(404).send('error grabbing locations') : res.status(200).send(doc))
+      let vowels = /a|e|i|o|u/gi;
+      let searchTerm = req.query.searchTerm.replace(vowels, '.');
+      let re = new RegExp(searchTerm, "i");
+      City.find({$or:[{cityName: re},{cityState:re}]}, null, { limit: 10 }, (err, doc) => err ? res.status(404).send('error grabbing locations') : res.status(200).send(doc))
     } else if (Number(req.query.searchTerm) !== NaN){
-      Zip.find({}, (err, doc) => err ? res.status(404).send('error grabbing locations') : res.status(200).send(doc))
+      let searchTerm = Number(req.query.searchTerm);
+      if (searchTerm > 9999) {
+        Zip.find({zipNum: searchTerm}, null, { limit: 10 }, (err, doc) => err ? res.status(404).send('error grabbing locations') : res.status(200).send(doc))
+      } else if (searchTerm < 1000) {
+        searchTerm = searchTerm * 100
+        Zip.find({zipNum: { $gte: searchTerm }}, null, { limit: 10 }, (err, doc) => err ? res.status(404).send('error grabbing locations') : res.status(200).send(doc))
+      } else if (searchTerm < 10000) {
+        searchTerm = searchTerm * 10
+        Zip.find({zipNum: { $gte: searchTerm }}, null, { limit: 10 }, (err, doc) => err ? res.status(404).send('error grabbing locations') : res.status(200).send(doc))
+      }
     }
   },
   post: (req, res) => {
