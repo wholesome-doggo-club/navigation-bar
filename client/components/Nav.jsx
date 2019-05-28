@@ -3,7 +3,7 @@ import NavMain from "./NavMain.jsx";
 import NavBreeds from "./NavBreeds.jsx";
 import NavFind from "./NavFind.jsx";
 import NavResources from "./NavResources.jsx";
-import NavPopupRegister from "./NavPopupRegister.jsx";
+// import NavPopupRegister from "./NavPopupRegister.jsx";
 
 class Nav extends React.Component {
   constructor() {
@@ -46,11 +46,11 @@ class Nav extends React.Component {
             </div>
 
 
-<input class="modal-state" id="nav-register-popup-modal" type="checkbox" />
-<div class="modal">
-  <label class="modal__bg" for="nav-register-popup-modal"></label>
-  <div class="modal__inner">
-    <label class="modal__close" for="nav-register-popup-modal"></label>
+<input className="modal-state" id="nav-register-popup-modal" type="checkbox" />
+<div className="modal">
+  <label className="modal__bg" for="nav-register-popup-modal"></label>
+  <div className="modal__inner">
+    <label className="modal__close" for="nav-register-popup-modal"></label>
     <div id="nav-pop-up-main">
       <span className="nav-popup-left-container">
       <h1>Petfinder Makes Adopting Easier</h1>
@@ -67,12 +67,12 @@ class Nav extends React.Component {
       <span className="nav-popup-right-container">
         <h1>Log in to Petfinder</h1>
         <form className="nav-popup-container-form">
-          <label for="Login_Modal_username" class="field-label">Email</label>
-          <input id="Login_Modal_username" type="email" spellcheck="false" name="username" required></input>
+          <label for="Login_Modal_username" className="field-label">Email</label>
+          <input id="Login_Modal_username" type="email" spellCheck="false" name="username" required></input>
         </form><p></p>
         <form className="nav-popup-container-form">
-          <input id="Login_Modal_password" type="password" spellcheck="false" autocomplete="off"></input>
-          <label for="Login_Modal_password" class="field-label">Password</label>
+          <input id="Login_Modal_password" type="password" spellCheck="false" autoComplete="off"></input>
+          <label for="Login_Modal_password" className="field-label">Password</label>
         </form><p></p>
         <button className="nav-popup-container-btn">LOG IN</button><p></p>
         

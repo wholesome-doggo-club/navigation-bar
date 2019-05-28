@@ -5,16 +5,17 @@ class NavMain extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      articleSearch: "",
       search: false
     };
-    // this.handleChange = this.handleChange.bind(this);
+    this.handleChange = this.handleChange.bind(this);
     this.handleSearchSwitch = this.handleSearchSwitch.bind(this);
     // this.handleNavFormBar = this.handleNavFormBar.bind(this);
   }
 
-  // handleChange(event) {
-  //   this.setState({ [event.target.id]: event.target.value });
-  // }
+  handleChange(event) {
+    this.setState({ [event.target.id]: event.target.value });
+  }
 
   // handleNavFormBar(btnName){
   //   this.setState({[btnName]: !this.state[btnName]})
@@ -32,7 +33,7 @@ class NavMain extends React.Component {
           <span className="nav-top-container-logo">
             <div className="nav-top-container-btn-right">
               <button className="nav-top-button">
-                <img src="https://www.underconsideration.com/brandnew/archives/petfinder_logo.png" height="40px"></img>
+                <img src="nav_logo.png" height="40px"></img>
 
               </button>
               
@@ -143,7 +144,7 @@ class NavMain extends React.Component {
           <span className="nav-top-container-logo">
             <div className="nav-top-container-btn-right">
               <button className="nav-top-button">
-                <img src="https://www.underconsideration.com/brandnew/archives/petfinder_logo.png" height="40px"></img>
+                <img src="nav_logo3.png" height="40px"></img>
               </button>
             </div>
           </span>
@@ -155,13 +156,13 @@ class NavMain extends React.Component {
               </button>
             </div>
             <div className="nav-top-container-searching-bar">
-              <input type="text" className="article-search" autoFocus></input>
+              <input id="articleSearch" type="text" className="article-search" autoFocus onChange={this.handleChange}></input>
             </div>
           </span>
 
           <span className="nav-top-container-search">
             <div className="nav-top-container-btn left-border">
-              <button className="nav-top-button padded2" onClick={() => console.log('tried to search!')}>
+              <button className="nav-top-button padded2" onClick={() => alert("Searching: " + this.state.articleSearch)}>
               🔍
               </button>
             </div>

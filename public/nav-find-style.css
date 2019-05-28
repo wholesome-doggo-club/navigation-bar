@@ -49,7 +49,7 @@
   color: white;
   font-size: 14px;
   border: none;
-
+  cursor:text;
   width: 100%;
   min-width: 250px;
   height:100%;
@@ -91,7 +91,6 @@
   text-decoration: none;
   /* display: inline-block; */
   font-size: 14px;
-  
   padding: 0px;
   height:100px;
   width: 100%;
@@ -100,6 +99,7 @@
 }
 
 .nav-find-search-type:hover {
+  cursor: pointer;
   background-color: #410078;
 }
 
@@ -153,4 +153,129 @@
 
 #nav-find-search-type-table{
   height:100%;
+}
+
+.nav-find-otherPets-dropdown{
+  color:#fff;
+  display: block;
+  width:100%;
+    position: absolute;
+    top: 100%;
+    left: -40px;
+    padding: 20px 24px;
+    z-index: 3;
+    background-color: #410078;
+    border-radius: 0 0 10px 10px;
+    text-align: left;
+    -webkit-box-shadow: 0 1px 3px rgba(77,71,81,.2);
+    box-shadow: 0 1px 3px rgba(77,71,81,.2);
+}
+
+.nav-find-otherPets-dropdown-btn {
+  font-family: "Nexa Regular";
+  display: block;
+  width: 241px;
+  color: #fff;
+  font-size: 13px;
+  padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+    text-decoration: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+.nav-find-locationSearch-dropdown{
+  color:black;
+  display: block;
+  width:100%;
+    min-width: 300px;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    /* padding: 20px 0 10px; */
+    z-index: 3;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 3px rgba(77,71,81,.2);
+    box-shadow: 0 1px 3px rgba(77,71,81,.2);
+}
+
+.nav-find-locationSearch-dropdown ul li {
+  cursor: pointer;
+  list-style-type: none;
+  list-style-position:inside;
+  margin-left:-20px;
+  margin-bottom: 10px;
+  padding:0; 
+  text-align: left;
+}
+
+.nav-find-locationSearch-dropdown li:hover {
+  color: #410078;
+  cursor: pointer;
+}
+
+
+/* 
+==========================
+ARROW ON SEARCH BAR  
+==========================
+*/
+
+.nav-find-locationSearch-dropdown:after,
+.nav-find-locationSearch-dropdown:before {
+  bottom: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.nav-find-locationSearch-dropdown:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #ffffff;
+  border-width: 14px;
+  left: 50%;
+  margin-left: -14px;
+}
+
+.nav-find-locationSearch-dropdown:before {
+  border-color: rgba(113, 158, 206, 0);
+  border-bottom-color: rgba(77,71,81,.2);
+  border-width: 15px;
+  left: 50%;
+  margin-left: -15px;
+}
+
+
+.nav-btn-find-search-bar:after,
+.nav-btn-find-search-bar:before {
+  bottom: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.nav-btn-find-search-bar:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #ffffff;
+  border-width: 14px;
+  left: 50%;
+  margin-left: -14px;
+}
+
+.nav-btn-find-search-bar:before {
+  border-color: rgba(113, 158, 206, 0);
+  border-bottom-color: rgba(77,71,81,.2);
+  border-width: 15px;
+  left: 50%;
+  margin-left: -15px;
 }
