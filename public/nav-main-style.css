@@ -61,7 +61,7 @@
   /* background-color:red; */
 }
 
-.nav-top-container-btn:hover {
+.dark:hover {
   background-color: #410078;
 }
 
@@ -143,7 +143,7 @@
 }
 
 .left-border {
-  border-left: 1px solid #444444;
+  border-left: 1px solid #410078;
 }
 
 .large {

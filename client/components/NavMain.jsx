@@ -161,7 +161,7 @@ class NavMain extends React.Component {
           </span>
 
           <span className="nav-top-container-search">
-            <div className="nav-top-container-btn left-border">
+            <div className="nav-top-container-btn dark left-border">
               <button className="nav-top-button padded2" onClick={() => alert("Searching: " + this.state.articleSearch)}>
               <div className="nav-searching-icon"></div>
               </button>

@@ -1,6 +1,11 @@
 import React from "react";
 import Popup from "reactjs-popup";
 import axios from "axios";
+// import "./nav-find-style.css";
+
+//update @bable-core, install webpack-cli, add babel file
+//james repo webpack_test
+
 
 class NavFind extends React.Component {
   constructor(props) {
@@ -56,12 +61,9 @@ class NavFind extends React.Component {
   
   render () {
     return (
-      <div id="nav-form-bar-drop-find" className="animate slideInDown">
+      <div className="nav-form-bar-drop-find animateNav navSlideInDown">
           <span className="fake3">
             <div className="fake3">.</div>
-            {/* <div className="fake3">
-              <button className="nav-find-location-search">.</button>
-            </div> */}
           
           </span>
 
@@ -73,23 +75,19 @@ class NavFind extends React.Component {
               
 
               <Popup
-            trigger={<table><tbody><tr><td><input type="text" className="location-search" id="locationSearch" placeholder="Enter City, State, or Zip" autofocus="autofocus" onChange={this.handleChange} value={this.state.locationSearch}></input></td></tr></tbody></table>}
-            position="bottom center"
-            on="focus"
-            contentStyle={{ padding: '0px', border: 'none' }}
-            arrow={false} >
-            {this.state.showResults.length > 0 ? <div className="nav-find-locationSearch-dropdown"><ul>
-          {this.state.showResults.map( (location, index) => {
-          return (
-            <li key={index} onClick={() => this.handleLocationClick((location.cityName || location.zipNum) + ', ' + (location.stateAbv || location.zipStateAbv))}>{location.cityName || location.zipNum}, {location.stateAbv || location.zipStateAbv}</li>
-          )
-          } ) }
-            </ul></div> : <div></div>}
-            {/* <div className="nav-resources-dropdown-container animate slideInDown">
-              <a href="">Dog Adoption</a><p></p>
-              <a href="">Cat Adoption</a><p></p>
-            </div> */}
-          </Popup>
+                trigger={<table><tbody><tr><td><input type="text" className="location-search" id="locationSearch" placeholder="Enter City, State, or Zip" autofocus="autofocus" onChange={this.handleChange} value={this.state.locationSearch}></input></td></tr></tbody></table>}
+                position="bottom center"
+                on="focus"
+                contentStyle={{ padding: '0px', border: 'none' }}
+                arrow={false} >
+                {this.state.showResults.length > 0 ? <div className="nav-find-locationSearch-dropdown"><ul>
+              {this.state.showResults.map( (location, index) => {
+              return (
+                <li key={index} onClick={() => this.handleLocationClick((location.cityName || location.zipNum) + ', ' + (location.stateAbv || location.zipStateAbv))}>{location.cityName || location.zipNum}, {location.stateAbv || location.zipStateAbv}</li>
+              )
+              } ) }
+                </ul></div> : <div></div>}
+              </Popup>
 
                
             </div>
@@ -106,7 +104,7 @@ class NavFind extends React.Component {
                 
                 <span className="filler">
                 
-                <table align="center" id="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-dog.png" height="50px"></img></td><td>Find a dog</td></tr></tbody></table>
+                <table align="center" className="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-dog.png" height="50px"></img></td><td>Find a dog</td></tr></tbody></table>
                 </span>
                 
                 
@@ -116,7 +114,7 @@ class NavFind extends React.Component {
             <div className="nav-btn-container-find-choices">
               <button className="nav-find-search-type" onClick={() => this.handleSearchInvoke('cats')}>
                 <span className="filler">
-                <table align="center" id="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-cat.png" height="50px"></img></td><td>Find a cat</td></tr></tbody></table>
+                <table align="center" className="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-cat.png" height="50px"></img></td><td>Find a cat</td></tr></tbody></table>
                 </span>
                 
                 
@@ -126,7 +124,7 @@ class NavFind extends React.Component {
               <button className="nav-find-search-type">
                 <span className="filler">
                 <Popup
-                  trigger={<table align="center" id="nav-find-search-type-table"><tbody><td valign="center">Find Other Pets</td><td> ▼</td></tbody></table>}
+                  trigger={<table align="center" className="nav-find-search-type-table"><tbody><td valign="center">Find Other Pets</td><td> ▼</td></tbody></table>}
                   position="bottom center"
                   on="click"
                   closeOnDocumentClick
@@ -134,12 +132,12 @@ class NavFind extends React.Component {
                   contentStyle={{ padding: '0px', border: 'none' }}
                   arrow={false} >
                   <div className="nav-find-otherPets-dropdown">
-                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('rabbits')}><table align="left" id="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-rabbits.png" height="30px"></img></td><td>Rabbits</td></tr></tbody></table></button>
-                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('smallAndFurry')}><table align="left" id="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-smallAndFurry.png" height="30px"></img></td><td>Small & Furry</td></tr></tbody></table></button>
-                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('scalesFinsOthers')}><table align="left" id="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-scalesFinsOther.png" height="30px"></img></td><td>Scales, Fins, & Other</td></tr></tbody></table></button>
-                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('birds')}><table align="left" id="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-birds.png" height="30px"></img></td><td>Birds</td></tr></tbody></table></button>
-                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('horses')}><table align="left" id="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-horses.png" height="30px"></img></td><td>Horses</td></tr></tbody></table></button>
-                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('barnyard')}><table align="left" id="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-barnyard.png" height="30px"></img></td><td>Barnyard</td></tr></tbody></table></button>
+                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('rabbits')}><table align="left" className="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-rabbits.png" height="30px"></img></td><td>Rabbits</td></tr></tbody></table></button>
+                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('smallAndFurry')}><table align="left" className="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-smallAndFurry.png" height="30px"></img></td><td>Small & Furry</td></tr></tbody></table></button>
+                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('scalesFinsOthers')}><table align="left" className="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-scalesFinsOther.png" height="30px"></img></td><td>Scales, Fins, & Other</td></tr></tbody></table></button>
+                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('birds')}><table align="left" className="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-birds.png" height="30px"></img></td><td>Birds</td></tr></tbody></table></button>
+                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('horses')}><table align="left" className="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-horses.png" height="30px"></img></td><td>Horses</td></tr></tbody></table></button>
+                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('barnyard')}><table align="left" className="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-barnyard.png" height="30px"></img></td><td>Barnyard</td></tr></tbody></table></button>
                   </div>
                 </Popup>
                 
