@@ -1,5 +1,6 @@
 import React from "react";
 import Popup from "reactjs-popup";
+import "./nav-resources-style.css";
 
 class NavResources extends React.Component {
   constructor(props) {
@@ -12,7 +13,7 @@ class NavResources extends React.Component {
   
   render () {
     return (
-      <div id="nav-form-bar-drop" className="animate slideInDown">
+      <div id="nav-form-bar-drop" className="animateNav navSlideInDown">
         <span className="nav-btn-container-resources">
           <Popup
             trigger={<button className="nav-resources-button"><a href="">ABOUT PET ADOPTION</a></button>}
@@ -22,7 +23,7 @@ class NavResources extends React.Component {
             mouseEnterDelay={0}
             contentStyle={{ padding: '0px', border: 'none' }}
             arrow={false} >
-            <div className="nav-resources-dropdown-container animate slideInDown">
+            <div className="nav-resources-dropdown-container animateNav navSlideInDown">
               <a href="">Dog Adoption</a><p></p>
               <a href="">Cat Adoption</a><p></p>
               <a href="">Other Pet Adoption</a><p></p>
@@ -41,7 +42,7 @@ class NavResources extends React.Component {
             mouseEnterDelay={0}
             contentStyle={{ padding: '0px', border: 'none' }}
             arrow={false} >
-            <div className="nav-resources-dropdown-container animate slideInDown">
+            <div className="nav-resources-dropdown-container animateNav navSlideInDown">
               <a href="">Dog Adoption</a><p></p>
               <a href="">Dog Breeds</a><p></p>
               <a href="">Bringing A Dog Home</a><p></p>
@@ -62,7 +63,7 @@ class NavResources extends React.Component {
             mouseEnterDelay={0}
             contentStyle={{ padding: '0px', border: 'none' }}
             arrow={false} >
-            <div className="nav-resources-dropdown-container animate slideInDown">
+            <div className="nav-resources-dropdown-container animateNav navSlideInDown">
               <a href="">Cat Adoption</a><p></p>
               <a href="">Cat Breeds</a><p></p>
               <a href="">Bringing A Cat Home</a><p></p>
@@ -83,7 +84,7 @@ class NavResources extends React.Component {
             mouseEnterDelay={0}
             contentStyle={{ padding: '0px', border: 'none' }}
             arrow={false} >
-            <div className="nav-resources-dropdown-container animate slideInDown">
+            <div className="nav-resources-dropdown-container animateNav navSlideInDown">
               <a href="">Pet Care Videos</a><p></p>
               <a href="">Dogs</a><p></p>
               <a href="">Cats</a><p></p>
@@ -103,7 +104,7 @@ class NavResources extends React.Component {
             mouseEnterDelay={0}
             contentStyle={{ padding: '0px', border: 'none' }}
             arrow={false} >
-            <div className="nav-resources-dropdown-container animate slideInDown">
+            <div className="nav-resources-dropdown-container animateNav navSlideInDown">
               <a href="">Find an Animal Shelter or Rescue Group</a><p></p>
               <a href="">Starting A Pet-Adoption Organization</a><p></p>
               <a href="">Volunteering With Dogs</a><p></p>
@@ -123,7 +124,7 @@ class NavResources extends React.Component {
             mouseEnterDelay={0}
             contentStyle={{ padding: '0px', border: 'none' }}
             arrow={false} >
-            <div className="nav-resources-dropdown-container animate slideInDown">
+            <div className="nav-resources-dropdown-container animateNav navSlideInDown">
               <a href="">Get Involved</a><p></p>
               <a href="">Read Our Blog</a><p></p>
               <a href="">Put Petfinder on Your Site</a><p></p>

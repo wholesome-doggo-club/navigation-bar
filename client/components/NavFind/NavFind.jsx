@@ -1,10 +1,7 @@
 import React from "react";
 import Popup from "reactjs-popup";
 import axios from "axios";
-// import "./nav-find-style.css";
-
-//update @bable-core, install webpack-cli, add babel file
-//james repo webpack_test
+import "./nav-find-style.css";
 
 
 class NavFind extends React.Component {

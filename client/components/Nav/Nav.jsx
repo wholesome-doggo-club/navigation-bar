@@ -1,8 +1,9 @@
 import React from "react";
-import NavMain from "./NavMain.jsx";
-import NavBreeds from "./NavBreeds.jsx";
-import NavFind from "./NavFind.jsx";
-import NavResources from "./NavResources.jsx";
+import NavMain from "../NavMain/NavMain.jsx";
+import NavBreeds from "../NavBreeds/NavBreeds.jsx";
+import NavFind from "../NavFind/NavFind.jsx";
+import NavResources from "../NavResources/NavResources.jsx";
+import "./nav-style.css";
 // import NavPopupRegister from "./NavPopupRegister.jsx";
 
 class Nav extends React.Component {
