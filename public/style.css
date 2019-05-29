@@ -1,11 +1,11 @@
 @font-face{
   font-family: "Nexa Regular";
-  src: url('Nexa-Light.otf')
+  src: url('s3://petfinder-nav/Nexa-Light.otf')
 }
 
 @font-face{
   font-family: "Nexa Bold";
-  src: url('Nexa-Bold.otf')
+  /* src: url('Nexa-Bold.otf') */
 }
 
 body, div, span {

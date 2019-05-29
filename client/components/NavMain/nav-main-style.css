@@ -21,7 +21,7 @@ button:focus, input:focus{
 
 @font-face{
   font-family: "Nexa Regular";
-  /* src: url('Nexa-Light.otf') */
+  src: url("https://s3-us-west-1.amazonaws.com/petfinder-nav/Nexa-Light.otf")
 }
 
 @font-face{
@@ -172,13 +172,13 @@ body, div, span, input {
   width: 50px;
   height: 30px;
   text-align: center;
-  /* background: url("icon-search.png") no-repeat center; */
+  background: url("https://s3-us-west-1.amazonaws.com/petfinder-nav/icon-search.png") no-repeat center;
   background-size:25px 30px;
   display: inline-block;
 }
 
 .nav-top-button:hover .nav-search-icon{
-  /* background: url("icon-search-hover.png") no-repeat center; */
+  background: url("https://s3-us-west-1.amazonaws.com/petfinder-nav/icon-search-hover.png") no-repeat center;
   background-size:25px 30px;
 }
 
@@ -186,8 +186,12 @@ body, div, span, input {
   width: 50px;
   height: 30px;
   text-align: center;
-  /* background: url("icon-searching.png") no-repeat center; */
+  background: url("https://s3-us-west-1.amazonaws.com/petfinder-nav/icon-searching.png") no-repeat center;
   background-size:25px 30px;
   display: inline-block;
 }
 
+.navClose {
+  background: url(https://s3-us-west-1.amazonaws.com/petfinder-nav/icon-close_colorWhite.svg) no-repeat center;
+  background-size:20px 20px;
+}

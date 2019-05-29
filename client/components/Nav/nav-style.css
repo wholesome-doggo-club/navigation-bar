@@ -57,13 +57,13 @@
   width: 50px;
   height: 30px;
   text-align: center;
-  /* background: url("icon-register.png") no-repeat center; */
+  background: url("https://s3-us-west-1.amazonaws.com/petfinder-nav/icon-register.png") no-repeat center;
   background-size:28px 30px;
   display: inline-block;
 }
 
 .nav-top-button:hover .nav-register-icon{
-  /* background: url("icon-register-hover.png") no-repeat center; */
+  background: url("https://s3-us-west-1.amazonaws.com/petfinder-nav/icon-register-hover.png") no-repeat center;
   background-size:28px 30px;
 }
 
