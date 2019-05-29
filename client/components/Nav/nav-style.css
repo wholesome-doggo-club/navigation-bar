@@ -195,19 +195,25 @@ wtf
   width: 50%;
   height: 507px;
   padding: 120px 60px 60px;
-  font: 14px "Nexa Bold";
+  font-size: 14px;
+  font-family: 'Nexa Bold', helvetica;
 }
 .nav-popup-right-container h1{
   text-align: left;
-  font-family: "Nexa Regular";
+  font-family: 'Nexa Regular', helvetica;
 }
 
 .nav-popup-right-container a {
+  text-align: center;
   color:#6504b5;
-  font: 14px "Nexa Bold";
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Nexa Bold', helvetica;
+  text-decoration: none;
 }
 .nav-popup-right-container a:hover {
   color:#2e0152;
+  text-decoration: underline;
 }
 
 .nav-popup-right-container p {
@@ -276,8 +282,9 @@ wtf
   text-overflow: ellipsis;
   text-transform: uppercase;
   -webkit-appearance: none;
-  /* font-weight: 700; */
-  font: 14px "Nexa Bold";
+  font-weight: 700;
+  font-size: 14px;
+  font-family: 'Nexa Bold', helvetica;
   /* font-size: 14px; */
   line-height: 1.4;
 }
@@ -300,6 +307,8 @@ wtf
   text-align:left;
   color: white;
   padding: 120px 60px 60px;
+  font-size: 14px;
+  font-family: 'Nexa Bold', helvetica;
 
 }
 .nav-popup-left-container li{

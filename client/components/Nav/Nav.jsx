@@ -77,7 +77,7 @@ class Nav extends React.Component {
         </form><p></p>
         <button className="nav-popup-container-btn">LOG IN</button><p></p>
         
-        <table className="line-partition"><tbody><tr><td><a href="">FORGOT PASSWORD?</a><p></p></td></tr></tbody></table><p></p>
+        <table className="line-partition"><tbody><tr><td><center><a href="">FORGOT PASSWORD?</a></center><p></p></td></tr></tbody></table><p></p>
         DON'T HAVE AN ACCOUNT?<p></p>
         <button className="nav-popup-container-btn">REGISTER NOW</button>
 
