@@ -53,7 +53,20 @@
   font-family: 'Nexa Bold', helvetica, arial, sans-serif;
 }
 
+.nav-gray-purple {
+  color: #4D4751;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  font-family: 'Nexa Bold', helvetica, arial, sans-serif;
+}
+
+.nav-gray-purple:hover {
+  color: #6504b5;
+}
+
 .nav-register-icon {
+
   width: 50px;
   height: 30px;
   text-align: center;
@@ -62,7 +75,13 @@
   display: inline-block;
 }
 
+/* .nav-register-icon:hover {
+  color: #4D4751;
+
+} */
+
 .nav-top-button:hover .nav-register-icon{
+  color: #6504b5;
   background: url("https://s3-us-west-1.amazonaws.com/petfinder-nav/icon-register-hover.png") no-repeat center;
   background-size:28px 30px;
 }

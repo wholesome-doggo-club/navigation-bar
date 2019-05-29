@@ -96,6 +96,12 @@
   width: 100%;
 }
 
-.nav-find-search-type-table{
+.nav-breed-table{
   height:100%;
+  font-size: 14px;
+  color: #ecd7fd;
+}
+
+.nav-breed-table:hover {
+  color: #ffffff;
 }

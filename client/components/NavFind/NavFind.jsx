@@ -101,7 +101,7 @@ class NavFind extends React.Component {
                 
                 <span className="filler">
                 
-                <table align="center" className="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-dog.png" height="50px"></img></td><td>Find a dog</td></tr></tbody></table>
+                <table align="center" className="nav-find-search-type-table"><tbody><tr><td><img src="https://s3-us-west-1.amazonaws.com/petfinder-nav/pet-search-dog.png" height="50px"></img></td><td>Find a dog</td></tr></tbody></table>
                 </span>
                 
                 
@@ -111,7 +111,7 @@ class NavFind extends React.Component {
             <div className="nav-btn-container-find-choices">
               <button className="nav-find-search-type" onClick={() => this.handleSearchInvoke('cats')}>
                 <span className="filler">
-                <table align="center" className="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-cat.png" height="50px"></img></td><td>Find a cat</td></tr></tbody></table>
+                <table align="center" className="nav-find-search-type-table"><tbody><tr><td><img src="https://s3-us-west-1.amazonaws.com/petfinder-nav/pet-search-cat.png" height="50px"></img></td><td>Find a cat</td></tr></tbody></table>
                 </span>
                 
                 
@@ -129,12 +129,12 @@ class NavFind extends React.Component {
                   contentStyle={{ padding: '0px', border: 'none' }}
                   arrow={false} >
                   <div className="nav-find-otherPets-dropdown">
-                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('rabbits')}><table align="left" className="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-rabbits.png" height="30px"></img></td><td>Rabbits</td></tr></tbody></table></button>
-                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('smallAndFurry')}><table align="left" className="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-smallAndFurry.png" height="30px"></img></td><td>Small & Furry</td></tr></tbody></table></button>
-                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('scalesFinsOthers')}><table align="left" className="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-scalesFinsOther.png" height="30px"></img></td><td>Scales, Fins, & Other</td></tr></tbody></table></button>
-                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('birds')}><table align="left" className="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-birds.png" height="30px"></img></td><td>Birds</td></tr></tbody></table></button>
-                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('horses')}><table align="left" className="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-horses.png" height="30px"></img></td><td>Horses</td></tr></tbody></table></button>
-                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('barnyard')}><table align="left" className="nav-find-search-type-table"><tbody><tr><td><img src="pet-search-barnyard.png" height="30px"></img></td><td>Barnyard</td></tr></tbody></table></button>
+                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('rabbits')}><table align="left" className="nav-find-search-type-table"><tbody><tr><td><img src="https://s3-us-west-1.amazonaws.com/petfinder-nav/pet-search-rabbits.png" height="30px"></img></td><td>Rabbits</td></tr></tbody></table></button>
+                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('smallAndFurry')}><table align="left" className="nav-find-search-type-table"><tbody><tr><td><img src="https://s3-us-west-1.amazonaws.com/petfinder-nav/pet-search-smallAndFurry.png" height="30px"></img></td><td>Small & Furry</td></tr></tbody></table></button>
+                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('scalesFinsOthers')}><table align="left" className="nav-find-search-type-table"><tbody><tr><td><img src="https://s3-us-west-1.amazonaws.com/petfinder-nav/pet-search-scalesFinsOther.png" height="30px"></img></td><td>Scales, Fins, & Other</td></tr></tbody></table></button>
+                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('birds')}><table align="left" className="nav-find-search-type-table"><tbody><tr><td><img src="https://s3-us-west-1.amazonaws.com/petfinder-nav/pet-search-birds.png" height="30px"></img></td><td>Birds</td></tr></tbody></table></button>
+                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('horses')}><table align="left" className="nav-find-search-type-table"><tbody><tr><td><img src="https://s3-us-west-1.amazonaws.com/petfinder-nav/pet-search-horses.png" height="30px"></img></td><td>Horses</td></tr></tbody></table></button>
+                    <button className="nav-find-otherPets-dropdown-btn" onClick={() => this.handleSearchInvoke('barnyard')}><table align="left" className="nav-find-search-type-table"><tbody><tr><td><img src="https://s3-us-west-1.amazonaws.com/petfinder-nav/pet-search-barnyard.png" height="30px"></img></td><td>Barnyard</td></tr></tbody></table></button>
                   </div>
                 </Popup>
                 

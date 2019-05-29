@@ -34,7 +34,7 @@ class NavMain extends React.Component {
           <span className="nav-top-container-logo">
             <div className="nav-top-container-btn-right">
               <button className="nav-top-button">
-                <img src="nav_logo.png" height="40px"></img>
+                <img src="https://s3-us-west-1.amazonaws.com/petfinder-nav/nav_logo.png" height="40px"></img>
 
               </button>
               
@@ -44,7 +44,7 @@ class NavMain extends React.Component {
             <div className="nav-top-container-btn">
               <button className="nav-top-button" onClick={() => this.props.handleNavFormBar('findPet')}>
               
-                <table align="center"><tbody><tr><td>FIND A PET </td><td> ▼</td></tr></tbody></table>
+                <table className="nav-gray-purple" align="center"><tbody><tr><td>FIND A PET </td><td> ▼</td></tr></tbody></table>
 
               </button>
             </div>
@@ -53,14 +53,14 @@ class NavMain extends React.Component {
             <div className="nav-top-container-btn">
               <button className="nav-top-button" onClick={() => this.props.handleNavFormBar('breeds')}>
                 
-                <table align="center"><tbody><tr><td>BREEDS </td><td> ▼</td></tr></tbody></table>
+                <table className="nav-gray-purple" align="center"><tbody><tr><td>BREEDS </td><td> ▼</td></tr></tbody></table>
               </button>
             </div>
           </span>
           <span className="nav-top-container-dir">
             <div className="nav-top-container-btn">
               <button className="nav-top-button" onClick={() => this.props.handleNavFormBar('resources')}>
-                <table align="center"><tbody><tr><td>RESOURCES </td><td> ▼</td></tr></tbody></table>
+                <table align="center" className="nav-gray-purple"><tbody><tr><td>RESOURCES </td><td> ▼</td></tr></tbody></table>
               </button>
             </div>
           </span>
@@ -84,7 +84,7 @@ class NavMain extends React.Component {
           <span className="nav-top-container-logo">
             <div className="nav-top-container-btn-right">
               <button className="nav-top-button">
-                <img src="nav_logo2.png" height="40px"></img>
+                <img src="https://s3-us-west-1.amazonaws.com/petfinder-nav/nav_logo2.png" height="40px"></img>
               </button>
             </div>
           </span>

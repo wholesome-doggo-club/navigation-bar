@@ -31,6 +31,7 @@ button:focus, input:focus{
 
 body, div, span, input {
   font-family: 'Nexa Regular', helvetica, arial, sans-serif;
+  font-size: 14px;
 }
 
 

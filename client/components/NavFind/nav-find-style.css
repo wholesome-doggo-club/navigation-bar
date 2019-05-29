@@ -87,6 +87,10 @@
 
 }
 
+.nav-btn-container-find-choices button table{
+  font-size: 14px;
+  color: white;
+}
 
 .nav-find-search-type {
   background-color: transparent;   /* Green #6504b5;*/
@@ -154,6 +158,9 @@
 }
 
 .nav-find-search-type-table{
+  font-size: 14px;
+  font-family: "Nexa Regular", helvetica;
+
   height:100%;
 }
 
