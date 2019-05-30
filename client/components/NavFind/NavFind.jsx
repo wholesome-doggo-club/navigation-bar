@@ -48,7 +48,7 @@ class NavFind extends React.Component {
   }
 
   fetchResults() {
-    axios.get('/api/nav', { params: { searchTerm : this.state.locationSearch } })
+    axios.get('/api/nav/data', { params: { searchTerm : this.state.locationSearch } })
       .then(({data}) => this.setState({showResults : data }))
       .catch(err => console.log(err));
     // console.log('updating data')

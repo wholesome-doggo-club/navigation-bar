@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}))
 
 app.use('/api/nav', express.static(__dirname + '/../public'));
-app.use('/api', routes);
+app.use('/api/nav', routes);
 // app.use(
 //   '/api',
 //   proxy({ target: 'http://localhost:3000', changeOrigin: true })

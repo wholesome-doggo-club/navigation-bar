@@ -2,7 +2,7 @@ const controllers = require('./controllers.js');
 const router = require('express').Router();
 
 router
-  .route('/nav')
+  .route('/data')
   .get(controllers.get)
   .post(controllers.post)
   // .put(controllers.update)
