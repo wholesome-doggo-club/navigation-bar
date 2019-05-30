@@ -18,10 +18,10 @@ const generatorr = () => {
 }
 let samplePosts = generatorr();
 
-const insertSampleBlogs = function() {
-  console.log('insertsampleblogs got invoked')
+const insertSampleZips = function() {
+  console.log('insertSampleZips seeding function invoked! Check your database at capstone')
   Zip.create(samplePosts)
     .then(() => db.disconnect());
 };
 
-insertSampleBlogs();
+insertSampleZips();

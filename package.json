@@ -15,7 +15,9 @@
   },
   "scripts": {
     "start": "nodemon ./server/index.js",
-    "compile": "webpack -d --watch"
+    "compile": "webpack -d --watch",
+    "seed-cities": "node ./db/seedCity.js",
+    "seed-zips": "node ./db/seedZip.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
